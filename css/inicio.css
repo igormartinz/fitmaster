@@ -1,0 +1,7 @@
+/* HERO SECTION */
+#hero-section{
+    background-image: url(/img/hero-section.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+}
