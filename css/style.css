@@ -1,0 +1,98 @@
+/* ESTILIZAÇÕES GLOBAIS */
+
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* VARIAVEIS CSS */
+:root{
+    --cor-fundo-primario: #141414;
+    --cor-fundo-secundario: #373737;
+    --cor-primaria: #F96E07;
+    --cor-secudaria: #FFB434;
+    --cor-fonte: #FFFFFF;
+    --fonte-montserrat: 'Montserrat';
+    --fonte-inter: 'Inter'
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--fonte-inter);
+}
+
+p, a, label, input, button{
+    font-family: var(--fonte-montserrat);
+}
+
+ul{
+    list-style: none;
+}
+
+/* COR DE FUNDO */
+.bg-primary-color{
+    background-color: var(--cor-fundo-primario);
+}
+
+.bg-secondary-color{
+    background-color: var(--cor-fundo-secundario);
+}
+
+.bg-tertiary-color{
+    background-color: var(--cor-primaria);
+}
+
+/* CORES PRINCIPAIS */
+.color-primary{
+    color: var(--cor-primaria);
+}
+
+.color-secondary{
+    background-color: var(--cor-secudaria);
+}
+
+/* BOTÕES */
+.btn-primary, .btn-secondary{
+    background-color: var(--cor-primaria);
+    color: var(--cor-fonte);
+    text-decoration: none;
+    padding: .6em;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary:hover{
+    background-color: #FF8124;
+}
+
+.btn-secondary{
+    background-color: #FFB434;
+    color: var(--cor-fundo-primario);
+}
+
+.btn-secondary:hover{
+    background-color: #FFC767;
+}
+
+/* BORDAS */
+.border-primary-color{
+    border-color: var(--cor-primaria) !important;
+}
+
+.border-secondary-color{
+    border-color: var(--cor-secudaria) !important;
+}
+
+/* BADGE */
+.badge{
+    font-family: var(--fonte-montserrat);
+}
+
+/* TAMANHO DE FONTE */
+.fs-7{
+    font-size: 14px;
+}
