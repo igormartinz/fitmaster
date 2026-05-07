@@ -13,30 +13,57 @@
 </head>
 
 <body class="bg-primary-color">
+    <!-- HEADER -->
     <header
-        class="container-fluid d-flex justify-content-between align-items-center py-3 bg-primary-color border-bottom border-primary-color">
-        <img src="img/logo.png" width="200" alt="FitMaster">
-        <nav class="navbar navbar-expand-lg">
-            <ul class="d-flex m-0 gap-3">
-                <li><a href="" class="text-white text-decoration-none">Início</a></li>
-                <li><a href="" class="text-white text-decoration-none">Planos</a></li>
-                <li><a href="" class="text-white text-decoration-none">Nossa Unidade</a></li>
-                <li><a href="" class="btn-primary">Entrar</a></li>
-            </ul>
+        class="container-fluid d-flex justify-content-between align-items-center py-3 bg-primary-color border-bottom border-primary-color w-100">
+        <img src="img/logo.png" width="200" alt="Logo FitMaster">
+
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-md p-0">
+            <!-- 
+                Para a criação do menu responsivo, foi utilizado um checkbox em conjunto com as classes do 
+                Bootstrap "navbar-expand-md", que define a expansão da navbar em dispositivos médios e grandes,
+                e "collapse", responsável pelo comportamento de recolhimento do menu em telas pequenas. 
+                Também foi aplicado CSS próprio para o funcionamento e a estilização da navbar.
+            -->
+
+            <!-- CHECKBOX HACK -->
+            <input type="checkbox" id="menu-toggle" hidden>
+
+            <!-- MENU MOBILE -->
+            <label for="menu-toggle" class="d-md-none">
+                <i class="bi bi-list text-white"></i>
+            </label>
+
+            <div class="collapse navbar-collapse menu-mobile">
+                <ul
+                    class="navbar-nav d-flex flex-column flex-md-row m-0 p-0 gap-3 align-items-md-center align-items-start">
+                    <li><a href="" class="text-white text-decoration-none">Início</a></li>
+                    <li><a href="" class="text-white text-decoration-none">Planos</a></li>
+                    <li><a href="" class="text-white text-decoration-none">Nossa Unidade</a></li>
+                    <li><a href="" class="btn-primary d-inline-block">Entrar</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="hero-section" class="d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-white fw-bold text-center display-5 text-uppercase">Transforme seu corpo.<span
-                    class="d-block color-primary">Supere seus limites.</span></h1>
-            <p class="text-white text-center">Treinos para todos os níveis, com suporte e qualidade.</p>
-            <div class="d-flex gap-2 align-items-center justify-content-center">
-                <a href="pages/planos.html" class="btn-primary">Nossos planos</a>
-                <a href="pages/matricule-se.html" class="btn-secondary">Matricule-se</a>
+        <!-- HERO SECTION -->
+        <section id="hero-section" class="d-flex flex-column justify-content-center align-items-center ">
+            <h1 class="text-white fw-bold text-center display-5 text-uppercase order-0 order-md-1">Transforme seu corpo.</h1>
+            <h2 class="d-block color-primary fw-bold text-center display-5 text-uppercase order-1 order-md-0">Supere seus limites.</h2>
+            <p class="text-white text-center order-2 order-md-2">Treinos para todos os níveis, com suporte e qualidade.</p>
+            <div class="row g-2 order-3 order-md-3">
+                <div class="col-6 w-auto order-0 order-lg-1">
+                    <a href="pages/matricule-se.html" class="btn-secondary">Matricule-se</a>
+                </div>
+                <div class="col-6 w-auto order-1 order-lg-0">
+                    <a href="pages/planos.html" class="btn-primary">Nossos planos</a>
+                </div>
             </div>
         </section>
 
+        <!-- MODALIDADES -->
         <section id="modalidades" class="container mt-5 mb-5">
             <h2 class="text-white fw-bold text-center fs-2 mb-4 text-uppercase">Nossas <span
                     class="color-primary">Modalidades</span></h2>
@@ -44,7 +71,7 @@
                 <div class="col-9 col-md-5 col-lg-3">
                     <article class="card bg-secondary-color  m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
                         <div class="position-relative">
-                            <img src="/img/card-musculacao.png" class="w-100" alt="">
+                            <img src="/img/card-musculacao.png" class="w-100" alt="Pessoas praticando musculação">
                             <span class="badge position-absolute end-0 color-secondary m-1 text-dark rounded-pill">Mais
                                 procurado</span>
                             <h3 class="text-white position-absolute bottom-0 start-0 ms-2 fw-bold fs-5">Musculação</h3>
@@ -57,9 +84,9 @@
                     </article>
                 </div>
                 <div class="col-9 col-md-5 col-lg-3">
-                    <article class="card bg-secondary-color  m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
+                    <article class="card bg-secondary-color m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
                         <div class="position-relative">
-                            <img src="/img/card-funcional.png" class="w-100" alt="">
+                            <img src="/img/card-funcional.png" class="w-100" alt="Área de praticar funcional">
                             <span
                                 class="badge position-absolute end-0 color-secondary m-1 text-dark rounded-pill">Popular</span>
                             <h3 class="text-white position-absolute bottom-0 start-0 ms-2 fw-bold fs-5">Funcional</h3>
@@ -73,7 +100,7 @@
                 <div class="col-9 col-md-5 col-lg-3">
                     <article class="card bg-secondary-color  m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
                         <div class="position-relative">
-                            <img src="/img/card-pilates.png" class="w-100" alt="">
+                            <img src="/img/card-pilates.png" class="w-100" alt="Mulher praticando pilates">
                             <span
                                 class="badge position-absolute end-0 color-secondary m-1 text-dark rounded-pill">Popular</span>
                             <h3 class="text-white position-absolute bottom-0 start-0 ms-2 fw-bold fs-5">Pilates</h3>
@@ -87,7 +114,7 @@
                 <div class="col-9 col-md-5 col-lg-3">
                     <article class="card bg-secondary-color  m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
                         <div class="position-relative">
-                            <img src="/img/card-crossfit.png" class="w-100" alt="">
+                            <img src="/img/card-crossfit.png" class="w-100" alt="Homem praticando crossfit">
                             <span
                                 class="badge position-absolute end-0 color-secondary m-1 text-dark rounded-pill">Popular</span>
                             <h3 class="text-white position-absolute bottom-0 start-0 ms-2 fw-bold fs-5">Crossfit</h3>
@@ -101,7 +128,7 @@
                 <div class="col-9 col-md-5 col-lg-3">
                     <article class="card bg-secondary-color  m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
                         <div class="position-relative">
-                            <img src="/img/card-jiu-jitsu.png" class="w-100" alt="">
+                            <img src="/img/card-jiu-jitsu.png" class="w-100" alt="Homens lutando Jiu-Jitsu">
                             <span
                                 class="badge position-absolute end-0 color-secondary m-1 text-dark rounded-pill">Técnico</span>
                             <h3 class="text-white position-absolute bottom-0 start-0 ms-2 fw-bold fs-5">Jiu-Jitsu</h3>
@@ -115,7 +142,7 @@
                 <div class="col-9 col-md-5 col-lg-3">
                     <article class="card bg-secondary-color  m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
                         <div class="position-relative">
-                            <img src="/img/card-hiit.png" class="w-100" alt="">
+                            <img src="/img/card-hiit.png" class="w-100" alt="Homem praticando HIIT">
                             <span class="badge position-absolute end-0 color-secondary m-1 text-dark rounded-pill">Alta
                                 intensidade</span>
                             <h3 class="text-white position-absolute bottom-0 start-0 ms-2 fw-bold fs-5">HIIT</h3>
@@ -129,7 +156,7 @@
                 <div class="col-9 col-md-5 col-lg-3">
                     <article class="card bg-secondary-color  m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
                         <div class="position-relative">
-                            <img src="/img/card-yoga.png" class="w-100" alt="">
+                            <img src="/img/card-yoga.png" class="w-100" alt="Grupo de mulheres praticando yoga">
                             <span
                                 class="badge position-absolute end-0 color-secondary m-1 text-dark rounded-pill">Relaxamento</span>
                             <h3 class="text-white position-absolute bottom-0 start-0 ms-2 fw-bold fs-5">Yoga</h3>
@@ -143,7 +170,8 @@
                 <div class="col-9 col-md-5 col-lg-3">
                     <article class="card bg-secondary-color  m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
                         <div class="position-relative">
-                            <img src="/img/card-cardio.png" class="w-100" alt="">
+                            <img src="/img/card-cardio.png" class="w-100"
+                                alt="Grupo de mulheres em bicicletas praticando cardio">
                             <span
                                 class="badge position-absolute end-0 color-secondary m-1 text-dark rounded-pill">Condicionamento</span>
                             <h3 class="text-white position-absolute bottom-0 start-0 ms-2 fw-bold fs-5">Cardio</h3>
@@ -157,7 +185,7 @@
                 <div class="col-9 col-md-5 col-lg-3">
                     <article class="card bg-secondary-color  m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
                         <div class="position-relative">
-                            <img src="/img/card-muay-thai.png" class="w-100" alt="">
+                            <img src="/img/card-muay-thai.png" class="w-100" alt="Mulher treinando Muay-Thai">
                             <span
                                 class="badge position-absolute end-0 color-secondary m-1 text-dark rounded-pill">Novo</span>
                             <h3 class="text-white position-absolute bottom-0 start-0 ms-2 fw-bold fs-5">Muay Thai</h3>
@@ -171,7 +199,7 @@
                 <div class="col-9 col-md-5 col-lg-3">
                     <article class="card bg-secondary-color  m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
                         <div class="position-relative">
-                            <img src="/img/card-boxe.png" class="w-100" alt="">
+                            <img src="/img/card-boxe.png" class="w-100" alt="Homem praticando boxe">
                             <span
                                 class="badge position-absolute end-0 color-secondary m-1 text-dark rounded-pill">Novo</span>
                             <h3 class="text-white position-absolute bottom-0 start-0 ms-2 fw-bold fs-5">Boxe</h3>
@@ -185,7 +213,7 @@
                 <div class="col-9 col-md-5 col-lg-3">
                     <article class="card bg-secondary-color  m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
                         <div class="position-relative">
-                            <img src="/img/card-spinning.png" class="w-100" alt="">
+                            <img src="/img/card-spinning.png" class="w-100" alt="Dupla de mulheres praticando Spinning">
                             <span
                                 class="badge position-absolute end-0 color-secondary m-1 text-dark rounded-pill">Novo</span>
                             <h3 class="text-white position-absolute bottom-0 start-0 ms-2 fw-bold fs-5">Spinning</h3>
@@ -199,7 +227,7 @@
                 <div class="col-9 col-md-5 col-lg-3">
                     <article class="card bg-secondary-color  m-0 p-0 overflow-hidden rounded-3 h-100 border-0">
                         <div class="position-relative">
-                            <img src="/img/card-zumba.png" class="w-100" alt="">
+                            <img src="/img/card-zumba.png" class="w-100" alt="Grupo de mulhres praticando zumba">
                             <span
                                 class="badge position-absolute end-0 color-secondary m-1 text-dark rounded-pill">Novo</span>
                             <h3 class="text-white position-absolute bottom-0 start-0 ms-2 fw-bold fs-5">Zumba</h3>
@@ -214,18 +242,20 @@
             </div>
         </section>
 
+        <!-- FORMULARIO DE CONTATO -->
         <section id="contato" class="container-fluid">
             <div class="row text-white">
-                <img src="img/levantamento-peso.png " alt="" class="col-6 p-0 d-sm-none d-md-block">
-                <div class="col-12 col-md-6 bg-secondary-color d-flex flex-column justify-content-center p-5">
-                    <h2 class="fw-bold fs-2 mb-1 text-uppercase">Contato</h2>
-                    <p class="fs-5">Entre em contato conosco e tire suas dúvidas.</p>
-                    <form action="" class="d-flex flex-column gap-4">
-                        <div class="d-flex gap-4">
+                <img src="img/levantamento-peso.png " alt="Homem realizando levantamento de peso"
+                    class="col-6 p-0 d-none d-lg-block">
+                <div class="col-12 col-md-12 col-lg-6 bg-secondary-color d-flex flex-column justify-content-center p-3">
+                    <h2 class="fw-bold fs-3 mb-1 text-uppercase">Contato</h2>
+                    <p>Entre em contato conosco e tire suas dúvidas.</p>
+                    <form action="" class="d-flex flex-column gap-2">
+                        <div class="d-flex gap-4 flex-column flex-md-row">
                             <div class="d-flex flex-column w-100">
                                 <label for="nome">Nome completo</label>
-                                <input class="bg-primary-color border-0 p-2 rounded-2 text-white" type="text"
-                                    name="nome" id="nome" placeholder="Digite seu nome completo">
+                                <input class="bg-primary-color border-0 p-2 rounded-2 text-white"
+                                    type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
                             </div>
                             <div class="d-flex flex-column w-100">
                                 <label for="email">E-mail</label>
@@ -235,7 +265,7 @@
                         </div>
                         <div class="d-flex flex-column">
                             <label for="mensagem">Mensagem</label>
-                            <textarea class="bg-primary-color border-0 p-2 rounded-2 text-white" rows="3"
+                            <textarea class="bg-primary-color border-0 p-2 rounded-2 text-white" rows="2"
                                 name="mensagem" id="mensagem" placeholder="Escreva sua mensagem..."></textarea>
                         </div>
                         <button class="btn-primary border-0 px-5 align-self-end">Enviar</button>
@@ -245,37 +275,35 @@
         </section>
     </main>
 
-    <footer class="border-top border-primary-color p-4 pb-0">
-        <div class="row d-flex align-items-center mb-3">
-            <div class="col-4">
-                <h3 class="text-white text-center">Redes <span class="color-primary">Sociais</span></h3>
+    <!-- RODAPÉ -->
+    <footer class="border-top border-primary-color p-3 pb-0">
+        <div class="row d-flex align-items-center mb-3 flex-column flex-md-row">
+            <div class="col-12 col-lg-4 order-1 order-lg-0 p-1 pb-2 py-md-3">
+                <h3 class="text-white text-center fs-5 mb-2">Redes <span class="color-primary">Sociais</span></h3>
                 <div class="d-flex gap-3 justify-content-center align-items-center">
-                    <a href=""
-                        class="bg-tertiary-color p-2 px-3 d-flex justify-content-center align-items-center rounded-circle "><i
-                            class="fs-3 text-white bi bi-instagram"></i></a>
-                    <a href=""
-                        class="bg-tertiary-color p-2 px-3 d-flex justify-content-center align-items-center rounded-circle "><i
-                            class="fs-3 text-white bi bi-facebook"></i></a>
-                    <a href=""
-                        class="bg-tertiary-color p-2 px-3 d-flex justify-content-center align-items-center rounded-circle "><i
-                            class="fs-3 text-white bi bi-tiktok"></i></a>
-                    <a href=""
-                        class="bg-tertiary-color p-2 px-3 d-flex justify-content-center align-items-center rounded-circle "><i
-                            class="fs-3 text-white bi bi-youtube"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/pdcaseinformatica/" 
+                        class="bg-tertiary-color p-2 d-flex justify-content-center align-items-center rounded-circle text-decoration-none"><i
+                            class="d-flex justify-content-center align-items-center fs-4 text-white bi bi-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/pd.case.10?locale=pt_BR"
+                        class="bg-tertiary-color p-2 d-flex justify-content-center align-items-center rounded-circle text-decoration-none"><i
+                            class="d-flex justify-content-center align-items-center fs-4 text-white bi bi-facebook"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/@PDCaseInformatica"
+                        class="bg-tertiary-color p-2 d-flex justify-content-center align-items-center rounded-circle text-decoration-none"><i
+                            class="d-flex justify-content-center align-items-center fs-4 text-white bi bi-youtube"></i></a>
                 </div>
             </div>
-            <div class="col-4 d-flex justify-content-center align-items-center">
-                <img src="img/logo.png" width="300" alt="Logo FitMaster">
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center order-0">
+                <img src="img/logo.png" width="200" alt="Logo FitMaster">
             </div>
-            <div class="col-4 d-flex justify-content-center align-items-center">
-                <a href="pages/nossa-unidade.html" class="btn-primary fs-4"><i class="bi bi-pin-map"></i> Ver localização</a>
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center order-2">
+                <a href="pages/nossa-unidade.html" class="btn-primary fs-5"><i class="bi bi-pin-map"></i> Ver
+                    localização</a>
             </div>
         </div>
         <div class="border-top border-secondary-color">
-            <p class="text-white text-center fs-5 m-0 p-3">© 2026 FitMaster. Todos os Direitos Reservados</p>
+            <p class="text-white text-center fs-6 m-0 p-3">© 2026 FitMaster. Todos os Direitos Reservados</p>
         </div>
     </footer>
-
 </body>
 
 </html>

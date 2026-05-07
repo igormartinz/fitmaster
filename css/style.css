@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 /* VARIAVEIS CSS */
-:root{
+:root {
     --cor-fundo-primario: #141414;
     --cor-fundo-secundario: #373737;
     --cor-primaria: #F96E07;
@@ -15,47 +15,57 @@
     --fonte-inter: 'Inter'
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--fonte-inter);
 }
 
-p, a, label, input, button{
+p,
+a,
+label,
+input,
+button {
     font-family: var(--fonte-montserrat);
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 /* COR DE FUNDO */
-.bg-primary-color{
+.bg-primary-color {
     background-color: var(--cor-fundo-primario);
 }
 
-.bg-secondary-color{
+.bg-secondary-color {
     background-color: var(--cor-fundo-secundario);
 }
 
-.bg-tertiary-color{
+.bg-tertiary-color {
     background-color: var(--cor-primaria);
 }
 
 /* CORES PRINCIPAIS */
-.color-primary{
+.color-primary {
     color: var(--cor-primaria);
 }
 
-.color-secondary{
+.color-secondary {
     background-color: var(--cor-secudaria);
 }
 
 /* BOTÕES */
-.btn-primary, .btn-secondary{
+.btn-primary,
+.btn-secondary {
     background-color: var(--cor-primaria);
     color: var(--cor-fonte);
     text-decoration: none;
@@ -65,34 +75,62 @@ ul{
     transition: .5s;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #FF8124;
 }
 
-.btn-secondary{
+.btn-secondary {
     background-color: #FFB434;
     color: var(--cor-fundo-primario);
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background-color: #FFC767;
 }
 
 /* BORDAS */
-.border-primary-color{
+.border-primary-color {
     border-color: var(--cor-primaria) !important;
 }
 
-.border-secondary-color{
+.border-secondary-color {
     border-color: var(--cor-secudaria) !important;
 }
 
 /* BADGE */
-.badge{
+.badge {
     font-family: var(--fonte-montserrat);
 }
 
 /* TAMANHO DE FONTE */
-.fs-7{
+.fs-7 {
     font-size: 14px;
+}
+
+/* ICONES RODAPE */
+.icone-rodape{
+    border-radius: 50%;
+}
+
+/* MENU RESPONSIVO */
+@media (max-width: 768px) {
+    .bi-list{
+        font-size: 3em;
+        padding: 0;
+    }
+
+    .menu-mobile {
+        position: absolute;
+        top: 70px;
+        width: 100vw;
+        padding: 1em;
+        background-color: var(--cor-fundo-primario);
+        border-bottom: 1px solid var(--cor-primaria);
+    }
+
+    #menu-toggle:checked~.menu-mobile {
+        display: block;
+        right: -10px;
+    }
+
 }
