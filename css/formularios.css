@@ -1,0 +1,13 @@
+/* PLANO DE FUNDO PARA PÁGINAS DE FORMULÁRIO*/
+.formulario{
+    background-image: url(/img/plano-de-fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* OPACIDADE PLANO DE FUNDO */
+.bg-opacity-90{
+    background-color: rgba(0, 0, 0, 0.85);
+}
