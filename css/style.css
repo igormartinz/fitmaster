@@ -33,7 +33,8 @@ p,
 a,
 label,
 input,
-button {
+button,
+del {
     font-family: var(--fonte-montserrat);
 }
 
@@ -108,13 +109,26 @@ ul {
 }
 
 /* ICONES RODAPE */
-.icone-rodape{
+.icone-rodape {
     border-radius: 50%;
+}
+
+/* FORMULARIO */
+.form-control{
+    color: var(--cor-fonte);
+}
+
+.form-control:focus{
+    background-color: var(--cor-fundo-secundario);
+}
+
+.form-control::placeholder{
+    color: #666666;
 }
 
 /* MENU RESPONSIVO */
 @media (max-width: 768px) {
-    .bi-list{
+    .bi-list {
         font-size: 3em;
         padding: 0;
     }
