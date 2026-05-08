@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>FitMaster | Início</title>
+</head>
+
+<body class="bg-primary-color">
+    <!-- HEADER -->
+    <header
+        class="container-fluid d-flex justify-content-between align-items-center py-3 bg-primary-color border-bottom border-primary-color w-100">
+        <img src="../img/logo.png" width="200" alt="Logo FitMaster">
+
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-md p-0">
+            <!-- 
+                Para a criação do menu responsivo, foi utilizado um checkbox em conjunto com as classes do 
+                Bootstrap "navbar-expand-md", que define a expansão da navbar em dispositivos médios e grandes,
+                e "collapse", responsável pelo comportamento de recolhimento do menu em telas pequenas. 
+                Também foi aplicado CSS próprio para o funcionamento e a estilização da navbar.
+            -->
+
+            <!-- CHECKBOX HACK -->
+            <input type="checkbox" id="menu-toggle" hidden>
+
+            <!-- MENU MOBILE -->
+            <label for="menu-toggle" class="d-md-none">
+                <i class="bi bi-list text-white"></i>
+            </label>
+
+            <div class="collapse navbar-collapse menu-mobile">
+                <ul
+                    class="navbar-nav d-flex flex-column flex-md-row m-0 p-0 gap-3 align-items-md-center align-items-start">
+                    <li><a href="/" class="text-white text-decoration-none">Início</a></li>
+                    <li><a href="planos.html" class="text-white text-decoration-none">Planos</a></li>
+                    <li><a href="nossa-unidade.html" class="text-white text-decoration-none">Nossa Unidade</a>
+                    </li>
+                    <li><a href="login.html" class="btn-primary d-inline-block">Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="text-white text-uppercase fw-bold text-center fs-2 my-4">Escolha <span class="color-primary">seu
+                plano<span></h2>
+
+        <div class="row g-4 justify-content-center align-items-center mb-3 m-0">
+            <div class="col-10 col-sm-9 col-md-6 col-lg-6">
+                <article class="text-white bg-secondary-color rounded-4 p-3 h-100">
+                    <h3 class="text-center fw-bold mb-3 fw-3">Plano Combat</h3>
+                    <p>Evolua nas artes marciais com técnica e intensidade.</p>
+
+                    <div class="d-flex flex-column gap-1">
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Aulas de Muay Thai</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Aulas de Boxe</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Aulas de Jiu-Jitsu</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Acesso à musculação</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-danger fs-4 bi bi-x-circle"></i>
+                            <p class="m-0">Acompanhamento individual</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-danger fs-4 bi bi-x-circle"></i>
+                            <p class="m-0">Kit inicial (camiseta, garrafa, etc.)</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-danger fs-4 bi bi-x-circle"></i>
+                            <p class="m-0">Área VIP (massagem, lanches)</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-2">
+                        <p class="fw-semibold fs-1 mt-2 mb-1">R$ 99,00</p>
+                        <small class="align-self-end mb-2">/mês</small>
+                    </div>
+
+                    <a href="matricule-se.html" class="btn-primary text-center d-block mt-auto">Matricule-se</a>
+                </article>
+            </div>
+            <div class="col-10 col-sm-9 col-md-6 col-lg-6">
+                <article class="text-white bg-secondary-color rounded-4 p-3 h-100">
+                    <h3 class="text-center fw-bold mb-3 fw-3">Plano Master</h3>
+                    <p>Mais acesso e variedade para sua evolução.</p>
+
+                    <div class="d-flex flex-column gap-1">
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Acesso à musculação</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Avaliação física inicial</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0"> 2 modalidades à escolha</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Treino personalizado básico</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Reavaliação mensal</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-danger fs-4 bi bi-x-circle"></i>
+                            <p class="m-0">Kit inicial (camiseta, garrafa, etc.)</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-danger fs-4 bi bi-x-circle"></i>
+                            <p class="m-0">Área VIP (massagem, lanches)</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-2">
+                        <p class="fw-semibold fs-1 mt-2 mb-1">R$ 130,00</p>
+                        <small class="align-self-end mb-2">/mês</small>
+                    </div>
+
+                    <a href="matricule-se.html" class="btn-primary text-center d-block mt-auto">Matricule-se</a>
+                </article>
+            </div>
+            <div class="col-10 col-sm-9 col-md-6 col-lg-6">
+                <article class="text-white bg-secondary-color rounded-4 p-3 h-100">
+                    <h3 class=" text-center fw-bold mb-3 fw-3">Plano Master Pro</h3>
+                    <p>Treinos completos com melhor acompanhamento.</p>
+
+                    <div class="d-flex flex-column gap-1">
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Todas as modalidades liberadas</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Acompanhamento individual</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Acompanhamento nutricional</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Treinos personalizados</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Avaliações físicas frequentes</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Kit inicial (camiseta, garrafa, etc.)</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-danger fs-4 bi bi-x-circle"></i>
+                            <p class="m-0">Área VIP (massagem, lanches)</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-2">
+                        <p class="fw-semibold fs-1 mt-2 mb-1">R$ 250,00</p>
+                        <small class="align-self-end mb-2">/mês</small>
+                    </div>
+
+                    <a href="matricule-se.html" class="btn-primary text-center d-block mt-auto">Matricule-se</a>
+                </article>
+            </div>
+            <div class="col-10 col-sm-9 col-md-6 col-lg-6">
+                <article class="text-white bg-secondary-color rounded-4 p-3 h-100">
+                    <h3 class=" text-center fw-bold mb-3 fw-3">Plano Master Pro</h3>
+                    <p>Treinos completos com melhor acompanhamento.</p>
+
+                    <div class="d-flex flex-column gap-1">
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Todas as modalidades liberadas</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Acompanhamento individual</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Acompanhamento nutricional</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Treinos personalizados</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Avaliações físicas frequentes</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Kit inicial (camiseta, garrafa, etc.)</p>
+                        </div>
+                        <div class="d-flex gap-2 align-items-center">
+                            <i class="text-success fs-4 bi bi-check-circle"></i>
+                            <p class="m-0">Área VIP (massagem, lanches)</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-2">
+                        <p class="fw-semibold fs-1 mt-2 mb-1">R$ 479,00</p>
+                        <small class="align-self-end mb-2">/mês</small>
+                    </div>
+
+                    <a href="matricule-se.html" class="btn-primary text-center d-block mt-auto">Matricule-se</a>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="border-top border-primary-color p-3 pb-0">
+        <div class="row d-flex align-items-center mb-3 flex-column flex-md-row">
+            <div class="col-12 col-lg-4 order-1 order-lg-0 p-1 pb-2 py-md-3">
+                <h3 class="text-white text-center fs-5 mb-2">Redes <span class="color-primary">Sociais</span></h3>
+                <div class="d-flex gap-3 justify-content-center align-items-center">
+                    <a target="_blank" href="https://www.instagram.com/pdcaseinformatica/"
+                        class="bg-tertiary-color p-2 d-flex justify-content-center align-items-center rounded-circle text-decoration-none"><i
+                            class="d-flex justify-content-center align-items-center fs-4 text-white bi bi-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/pd.case.7?locale=pt_BR"
+                        class="bg-tertiary-color p-2 d-flex justify-content-center align-items-center rounded-circle text-decoration-none"><i
+                            class="d-flex justify-content-center align-items-center fs-4 text-white bi bi-facebook"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/@PDCaseInformatica"
+                        class="bg-tertiary-color p-2 d-flex justify-content-center align-items-center rounded-circle text-decoration-none"><i
+                            class="d-flex justify-content-center align-items-center fs-4 text-white bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center order-0">
+                <img src="../img/logo.png" width="200" alt="Logo FitMaster">
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center order-2">
+                <a href="pages/nossa-unidade.html" class="btn-primary fs-5"><i class="bi bi-pin-map"></i> Ver
+                    localização</a>
+            </div>
+        </div>
+        <div class="border-top border-secondary-color">
+            <p class="text-white text-center fs-6 m-0 p-3">© 2026 FitMaster. Todos os Direitos Reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>

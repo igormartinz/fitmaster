@@ -34,7 +34,8 @@ a,
 label,
 input,
 button,
-del {
+del,
+small {
     font-family: var(--fonte-montserrat);
 }
 
