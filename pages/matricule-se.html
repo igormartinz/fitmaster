@@ -13,135 +13,152 @@
     <title>FitMaster | Matricula-se</title>
 </head>
 
-<body class="bg-primary-color formulario ">
-    <main class="container min-vh-100 d-flex justify-content-center align-items-center p-0">
-        <section id="matricula" class=" bg-opacity-90 text-white p-4 rounded-4 text-center p-lg-5 m-1">
-            <div class="d-flex flex-column">
-                <img src="/img/logo.png" width="200" class="mx-auto" alt="Logo FitMaster">
-                <div class="p-2">
-                    <h2 class="text-uppercase fw-bold">Matricula-se</h2>
-                    <p>Cadastre-se agora e dê o primeiro passo para uma vida mais saudável.</p>
+<body class="formulario">
+    <div class="row m-0">
+        <main class="min-vh-100 d-flex justify-content-center align-items-center p-0">
+            <section id="matricula"
+                class="bg-opacity-90 text-white p-4 rounded-4 text-center p-lg-4 m-1 col-md-8 col-lg-11 col-xl-10 col-xxl-8">
+                <div class="d-flex flex-column">
+                    <div class="d-lg-flex align-items-lg-center gap-3">
+                        <img src="/img/logo.png" width="200" class="mx-auto me-lg-0 order-lg-1" alt="Logo FitMaster">
+                        <div class="p-2 order-lg-0 d-lg-flex flex-lg-column align-items-lg-start">
+                            <h2 class="text-uppercase fw-bold">Matricula-se</h2>
+                            <p>Cadastre-se agora e dê o primeiro passo para uma vida mais saudável.</p>
+                        </div>
+                    </div>
+                    <form action="" class="d-flex flex-column justify-content-start align-items-start gap-3">
+                        <div class="row d-lg-flex flex-lg-row w-100 g-3 gx-lg-3 mx-auto">
+                            <div class="col-lg-4 d-flex d-lg-flex flex-column gap-3">
+                                <div class="d-flex flex-column w-100 align-items-start order-lg-0">
+                                    <label for="nome">Nome completo</label>
+                                    <input class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100"
+                                        type="email" name="nome" id="nome" placeholder="Digite seu nome completo">
+                                </div>
+                                <div class="d-flex flex-column w-100 align-items-start order-lg-1">
+                                    <label for="email">E-mail</label>
+                                    <input class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100"
+                                        type="email" name="email" id="email" placeholder="exemplo@gmail.com">
+                                </div>
+                                <div class="d-flex flex-column w-100 align-items-start order-lg-2">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" name="senha"
+                                        class="bg-secondary-color p-2 rounded-2 text-white w-100 form-control is-invalid"
+                                        id="senha" placeholder="Crie sua senha">
+                                    <div class="form-text text-white">
+                                        Sua senha deve conter pelo menos 8 caracteres.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-flex d-lg-flex flex-column gap-3">
+                                <div class="d-flex flex-column w-100 align-items-start order-2 order-lg-1">
+                                    <label for="telefone">Telefone</label>
+                                    <input class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100" type="tel"
+                                        name="telefone" id="telefone" placeholder="(00) 00000-0000">
+                                </div>
+                                <div class="d-flex flex-column w-100 align-items-start order-1 order-lg-0">
+                                    <label for="cpf">CPF</label>
+                                    <input class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100"
+                                        type="email" name="cpf" id="cpf" placeholder="000.000.00-00">
+                                </div>
+                                <div class="d-flex flex-column w-100 align-items-start order-0 order-lg-2">
+                                    <label for="senha-confirmacao">Senha (confirmação)</label>
+                                    <input type="password" name="senha"
+                                        class="bg-secondary-color p-2 rounded-2 text-white w-100 form-control is-invalid"
+                                        id="senha-confirmacao" placeholder="Confirme sua senha">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-flex d-lg-flex flex-column gap-3 gap-lg-2">
+                                <div class="d-flex flex-column w-100 align-items-start">
+                                    <p class="m-0">Objetivo</p>
+                                    <div class="d-flex align-items-center gap-1 p-1">
+                                        <input type="radio" name="objetivo" id="emagrecimento">
+                                        <label for="emagrecimento">Emagrecimento</label>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 p-1">
+                                        <input type="radio" name="objetivo" id="ganho-massa">
+                                        <label for="ganho-massa">Ganho de massa</label>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 p-1">
+                                        <input type="radio" name="objetivo" id="condicionamento-fisico">
+                                        <label for="condicionamento-fisico">Condicionamento físico</label>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1 p-1">
+                                        <input type="radio" name="objetivo" id="reabilitacao">
+                                        <label for="reabilitacao">Reabilitação</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column w-100 align-items-start">
+                                    <label for="plano">Plano</label>
+                                    <select name="plano" id="plano"
+                                        class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100">
+                                        <option value="" selected>Escolha um plano</option>
+                                        <option value="Plano Combat">Plano Combat</option>
+                                        <option value="Plano Master">Plano Master</option>
+                                        <option value="Plano Master Pro">Plano Master Pro</option>
+                                        <option value="Plano Master Elite">Plano Master Elite</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-lg-flex flex-lg-row w-100 g-3 gx-lg-3 mx-auto">
+                            <div class="d-flex flex-column align-items-start col-lg-8">
+                                <label for="limitacao">Possui limitação física?</label>
+                                <input type="text" name="limitacao"
+                                    class="bg-secondary-color p-2 rounded-2 text-white w-100 form-control is-valid"
+                                    id="limitacao" placeholder="Se sim, descreva aqui">
+                            </div>
+                            <div class="d-flex gap-2 align-items-center justify-content-between col-lg-4">
+                                <div class="col-5 col-lg-6">
+                                    <div class="d-flex flex-column align-items-start input-group">
+                                        <label for="altura">Altura</label>
+                                        <div class="d-flex flex-row">
+                                            <input type="number" name="altura" id="altura" placeholder="000"
+                                                class="bg-secondary-color p-2 rounded-2 text-white  form-control is-valid">
+                                            <div>
+                                                <span
+                                                    class="input-group-text bg-secondary-color border-secondary-color border-2 text-white">cm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-lg-6">
+                                    <div class="d-flex flex-column align-items-start input-group">
+                                        <label for="peso">Peso</label>
+                                        <div class="d-flex flex-row">
+                                            <input type="number" step="0.1" name="peso" id="peso" placeholder="00.0"
+                                                class="bg-secondary-color p-2 rounded-2 text-white  form-control is-valid">
+                                            <div>
+                                                <span
+                                                    class="input-group-text bg-secondary-color border-secondary-color border-2 text-white">Kg</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-start w-100 gap-2">
+                            <input type="checkbox" name="termos" id="termos">
+                            <label for="termos" class="m-0">Aceito os <span class="color-primary">termos de
+                                    uso</span></label>
+                        </div>
+                        <div class="d-lg-flex w-100 justify-content-lg-between align-items-lg-center">
+                            <div class="d-flex flex-column justify-content-start align-items-start col-6">
+                                <del class="fs-7">de R$ 130,00 por</del>
+                                <div class="d-flex justify-content-start align-items-center gap-2">
+                                    <p class="fs-1 fw-bold">Grátis</p>
+                                    <p class="badge color-secondary text-dark rounded-pill">No 1º mês</p>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="/index.html" class="btn-secondary d-block w-100 px-lg-5">Voltar</a>
+                                <a href="dashboard.html" class="btn-primary d-block w-100 px-lg-5">Enviar</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <form action="" class="d-flex flex-column justify-content-start align-items-start gap-3">
-                    <div class="d-flex flex-column w-100 align-items-start">
-                        <label for="nome">Nome completo</label>
-                        <input class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100" type="email"
-                            name="nome" id="nome" placeholder="Digite seu nome completo">
-                    </div>
-                    <div class="d-flex flex-column w-100 align-items-start">
-                        <label for="cpf">CPF</label>
-                        <input class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100" type="email"
-                            name="cpf" id="cpf" placeholder="000.000.00-00">
-                    </div>
-                    <div class="d-flex flex-column w-100 align-items-start">
-                        <label for="email">E-mail</label>
-                        <input class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100" type="email"
-                            name="email" id="email" placeholder="exemplo@gmail.com">
-                    </div>
-                    <div class="d-flex flex-column w-100 align-items-start">
-                        <label for="telefone">Telefone</label>
-                        <input class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100" type="tel"
-                            name="telefone" id="telefone" placeholder="(00) 00000-0000">
-                    </div>
-                    <div class="d-flex flex-column w-100 align-items-start">
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha"
-                            class="bg-secondary-color p-2 rounded-2 text-white w-100 form-control is-invalid" id="senha"
-                            placeholder="Crie sua senha">
-                        <div class="form-text text-white">
-                            Sua senha deve conter pelo menos 8 caracteres.
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column w-100 align-items-start">
-                        <label for="senha-confirmacao">Senha (confirmação)</label>
-                        <input type="password" name="senha"
-                            class="bg-secondary-color p-2 rounded-2 text-white w-100 form-control is-invalid"
-                            id="senha-confirmacao" placeholder="Confirme sua senha">
-                    </div>
-                    <div class="d-flex flex-column w-100 align-items-start">
-                        <p class="m-0">Objetivo</p>
-                        <div class="d-flex align-items-center gap-1 p-1">
-                            <input type="radio" name="objetivo" id="emagrecimento">
-                            <label for="emagrecimento">Emagrecimento</label>
-                        </div>
-                        <div class="d-flex align-items-center gap-1 p-1">
-                            <input type="radio" name="objetivo" id="ganho-massa">
-                            <label for="ganho-massa">Ganho de massa</label>
-                        </div>
-                        <div class="d-flex align-items-center gap-1 p-1">
-                            <input type="radio" name="objetivo" id="condicionamento-fisico">
-                            <label for="condicionamento-fisico">Condicionamento físico</label>
-                        </div>
-                        <div class="d-flex align-items-center gap-1 p-1">
-                            <input type="radio" name="objetivo" id="reabilitacao">
-                            <label for="reabilitacao">Reabilitação</label>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column w-100 align-items-start">
-                        <label for="plano">Plano</label>
-                        <select name="plano" id="plano"
-                            class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100">
-                            <option value="" selected>Escolha um plano</option>
-                            <option value="Plano Combat">Plano Combat</option>
-                            <option value="Plano Master">Plano Master</option>
-                            <option value="Plano Master Pro">Plano Master Pro</option>
-                            <option value="Plano Master Elite">Plano Master Elite</option>
-                        </select>
-                    </div>
-                    <div class="d-flex flex-column w-100 align-items-start">
-                        <label for="limitacao">Possui limitação física?</label>
-                        <input type="text" name="limitacao"
-                            class="bg-secondary-color p-2 rounded-2 text-white w-100 form-control is-valid"
-                            id="limitacao" placeholder="Se sim, descreva aqui">
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="d-flex flex-column align-items-start input-group w-100">
-                                <label for="altura">Altura</label>
-                                <div class="d-flex flex-row">
-                                    <input type="number" name="altura" id="altura" placeholder="000"
-                                        class="bg-secondary-color p-2 rounded-2 text-white w-100 form-control is-valid">
-                                    <div>
-                                        <span
-                                            class="input-group-text bg-secondary-color border-secondary-color border-2 text-white">cm</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-flex flex-column align-items-start input-group w-100">
-                                <label for="peso">Peso</label>
-                                <div class="d-flex flex-row">
-                                    <input type="number" step="0.1" name="peso" id="peso" placeholder="00.0"
-                                        class="bg-secondary-color p-2 rounded-2 text-white w-100 form-control is-valid">
-                                    <div>
-                                        <span
-                                            class="input-group-text bg-secondary-color border-secondary-color border-2 text-white">Kg</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-start w-100 gap-2">
-                        <input type="checkbox" name="termos" id="termos">
-                        <label for="termos" class="m-0">Aceito os <span class="color-primary">termos de
-                                uso</span></label>
-                    </div>
-                    <div class="d-flex flex-column justify-content-start align-items-start">
-                        <del class="fs-7">de R$ 130,00 por</del>
-                        <div class="d-flex justify-content-start align-items-center gap-2">
-                            <p class="fs-1 fw-bold">Grátis</p>
-                            <p class="badge color-secondary text-dark rounded-pill">No 1º mês</p>
-                        </div>
-                    </div>
-                    <div class="d-flex w-100 gap-2">
-                        <a href="/index.html" class="btn-secondary d-block w-100">Voltar</a>
-                        <a href="dashboard.html" class="btn-primary d-block w-100">Entrar</a>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
