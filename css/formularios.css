@@ -11,3 +11,23 @@
 .bg-opacity-90{
     background-color: rgba(0, 0, 0, 0.85);
 }
+
+/* MODAL */
+/* Fundo do modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 999;
+}
+
+#modal-toggle:checked ~ .modal {
+    display: flex;
+}
+
+@media (max-width: 992px) {
+    .modal-conteudo{
+        height: 100% !important;
+    }
+    
+}

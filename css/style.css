@@ -38,10 +38,6 @@ del {
     font-family: var(--fonte-montserrat);
 }
 
-ul {
-    list-style: none;
-}
-
 /* COR DE FUNDO */
 .bg-primary-color {
     background-color: var(--cor-fundo-primario);

@@ -138,9 +138,63 @@
                         </div>
                         <div class="d-flex align-items-center justify-content-start w-100 gap-2">
                             <input type="checkbox" name="termos" id="termos">
-                            <label for="termos" class="m-0">Aceito os <span class="color-primary">termos de
-                                    uso</span></label>
+                            <label for="termos" class="m-0">Aceito os</label><label for="modal-toggle"
+                                class="color-primary">termos de uso</label>
+                            <input type="checkbox" id="modal-toggle" hidden>
+
+                            <!-- MODAL TERMOS E CONDIÇÕES-->
+                            <div class="modal justify-content-center align-items-center text-start row m-0 m-sm-1">
+                                <div class="modal-conteudo bg-primary-color text-white rounded-4 p-0 h-75 overflow-y-auto col-md-8 col-lg-11 col-xl-10 col-xxl-9">
+                                    <div class="border-bottom border-primary-color p-4 pb-3">
+                                        <h2 class="text-uppercase fw-bold text-center">Termos e Condições <span
+                                                class="color-primary">de Matrícula</span></h2>
+                                        <p class="m-0">Ao realizar sua matrícula na FitMaster, o aluno
+                                            declara estar ciente e de
+                                            acordo com as normas internas, políticas de funcionamento e regras de
+                                            utilização da academia.</p>
+                                    </div>
+                                    <div class="p-4">
+                                        <article class="border-bottom border-secondary-color">
+                                            <h3 class="fw-bold fs-5">1. Regras Gerais</h3>
+                                            <ul>
+                                                <li>O acesso à academia é permitido somente mediante matrícula ativa e pagamento em dia.</li>
+                                                <li>O uso correto dos equipamentos é obrigatório, respeitando as orientações dos instrutores.</li>
+                                                <li>É obrigatório o uso de roupas adequadas para a prática de atividades físicas.</li>
+                                                <li>O aluno deve zelar pelos equipamentos e pelo ambiente da academia.</li>
+                                                <li>Não é permitido compartilhar plano ou acesso com terceiros.</li>
+                                            </ul>
+                                        </article>
+                                        <article class="border-bottom border-secondary-color pt-3">
+                                            <h3 class="fw-bold fs-5">2. Cancelamento e Suspensão</h3>
+                                            <ul>
+                                                <li>O cancelamento ou suspensão do plano deverá seguir as regras contratuais estabelecidas no momento da matrícula.</li>
+                                                <li>Benefícios promocionais poderão ter condições específicas de permanência mínima.</li>
+                                            </ul>
+                                        </article>
+                                        <article class="border-bottom border-secondary-color pt-3">
+                                            <h3 class="fw-bold fs-5">3. Saúde e Responsabilidade</h3>
+                                            <ul>
+                                                <li>O aluno é responsável por informar qualquer limitação física, condição de saúde ou uso de medicação relevante.</li>
+                                                <li>Em caso de recomendação médica, poderá ser solicitado acompanhamento profissional específico.</li>
+                                                <li>A prática de exercícios deve respeitar os limites individuais de cada aluno.</li>
+                                            </ul>
+                                        </article>
+                                        <article class="pt-3">
+                                            <h3 class="fw-bold fs-5">4. Horários e Funcionamento</h3>
+                                            <ul>
+                                                <li>Os horários de funcionamento variam conforme o plano contratado.</li>
+                                                <li> Algumas modalidades e aulas coletivas podem exigir agendamento prévio.</li>
+                                                <li>A academia poderá alterar horários em feriados ou datas especiais mediante aviso prévio.</li>
+                                            </ul>
+                                        </article>
+                                    </div>
+                                    <div class="border-top border-primary-color p-4 pb-3 text-end">
+                                        <label class="btn-secondary px-5" for="modal-toggle">Fechar</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="d-lg-flex w-100 justify-content-lg-between align-items-lg-center">
                             <div class="d-flex flex-column justify-content-start align-items-start col-6">
                                 <del class="fs-7">de R$ 130,00 por</del>
