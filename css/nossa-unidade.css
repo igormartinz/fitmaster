@@ -1,13 +1,19 @@
 /* BOTÃO WHATSAPP */
-.btn-whatsapp{
+.btn-whatsapp {
     background-color: #63D94B;
     transition: .5s;
 }
 
-.btn-whatsapp:hover{
+.btn-whatsapp:hover {
     background-color: #52b43f;
 }
 
-.mapa{
+.mapa {
     height: 30em;
+}
+
+@media (min-width: 1200px) {
+    .mapa {
+        height: 25em;
+    }
 }
