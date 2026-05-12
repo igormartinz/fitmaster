@@ -124,7 +124,7 @@ small {
 }
 
 /* MENU RESPONSIVO */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .bi-list {
         font-size: 3em;
         padding: 0;
