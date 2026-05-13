@@ -1,0 +1,40 @@
+/* ICONE */
+.icone-metricas {
+    font-size: 70px;
+}
+
+.icone-perfil {
+    height: 150px;
+}
+
+.link-sidebar {
+    width: 120px;
+}
+
+
+/* TABELA PROFISSIONAL */
+.table td{
+    border-right: 1px solid var(--cor-primaria);
+    border-left: 1px solid var(--cor-primaria);
+    border-bottom: none;
+    border-top: none;
+    white-space: nowrap;
+}
+
+/* SIDEBAR RESPONSIVA */
+@media (max-width: 991px) {
+    .menu-mobile {
+        position: absolute;
+        z-index: 999;
+        top: 70px;
+        width: 100vw;
+        padding: 1em;
+        background-color: var(--cor-fundo-primario);
+        border-bottom: 1px solid var(--cor-primaria);
+    }
+
+    #menu-toggle:checked~.menu-mobile {
+        display: block;
+        right: -10px;
+    }
+}

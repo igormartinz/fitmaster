@@ -35,7 +35,9 @@ label,
 input,
 button,
 del,
-small {
+small,
+strong,
+table {
     font-family: var(--fonte-montserrat);
 }
 
@@ -124,14 +126,14 @@ small {
 }
 
 /* MENU RESPONSIVO */
+.bi-list {
+    font-size: 3em;
+    padding: 0;
+}
 @media (max-width: 767px) {
-    .bi-list {
-        font-size: 3em;
-        padding: 0;
-    }
-
     .menu-mobile {
         position: absolute;
+        z-index: 999;
         top: 70px;
         width: 100vw;
         padding: 1em;

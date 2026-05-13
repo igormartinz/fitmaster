@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>FitMaster | Dashboard</title>
+</head>
+
+<body class="bg-primary-color">
+    <!-- HEADER -->
+    <header
+        class="container-fluid d-flex justify-content-between align-items-center py-3 bg-primary-color border-bottom border-primary-color w-100">
+        <img src="../img/logo.png" width="200" alt="Logo FitMaster">
+
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg p-0">
+            <!-- 
+                Para a criação do menu responsivo, foi utilizado um checkbox em conjunto com as classes do 
+                Bootstrap "navbar-expand-md", que define a expansão da navbar em dispositivos médios e grandes,
+                e "collapse", responsável pelo comportamento de recolhimento do menu em telas pequenas. 
+                Também foi aplicado CSS próprio para o funcionamento e a estilização da navbar.
+            -->
+
+            <!-- CHECKBOX HACK -->
+            <input type="checkbox" id="menu-toggle" hidden>
+
+            <!-- MENU MOBILE -->
+            <label for="menu-toggle" class="d-lg-none">
+                <i class="bi bi-list text-white"></i>
+            </label>
+
+            <div class="collapse navbar-collapse menu-mobile">
+                <ul
+                    class="navbar-nav d-flex flex-column flex-lg-row m-0 p-0 gap-3 align-items-lg-center align-items-start">
+                    <li><a href="/" class="text-white text-decoration-none">Início</a></li>
+                    <li><a href="planos.html" class="text-white text-decoration-none">Planos</a></li>
+                    <li><a href="nossa-unidade.html" class="text-white text-decoration-none">Nossa Unidade</a>
+                    </li>
+                    <li><a href="login.html" class="btn-primary d-inline-block">Entrar</a></li>
+                </ul>
+                <div class="text-white d-flex flex-column text-center d-lg-none">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-person-circle icone-perfil" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                        <h3 class="display-6 fw-bold m-0 mt-1">Jucelino Barbosa</h3>
+                        <p>jucebarbarosa@gmail.com</p>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#metricas"
+                            class="link-sidebar gap-2 text-white text-decoration-none d-flex mx-auto align-items-center">
+                            <i class=" fs-1 color-primary bi bi-bar-chart-line-fill"></i> Métricas
+                        </a>
+                        <a href="#mensagens"
+                            class="link-sidebar gap-2 text-white text-decoration-none d-flex mx-auto align-items-center">
+                            <i class=" fs-1 color-primary bi bi-chat-right-text-fill"></i> Mensagens
+                        </a>
+                        <a href="#metas"
+                            class="link-sidebar gap-2 text-white text-decoration-none d-flex mx-auto align-items-center">
+                            <i class=" fs-1 color-primary bi bi-graph-up"></i> Metas
+                        </a>
+                        <a href="#alunos"
+                            class="link-sidebar gap-2 text-white text-decoration-none d-flex mx-auto align-items-center">
+                            <i class=" fs-1 color-primary bi bi-people-fill"></i> Alunos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="text-white">
+        <div class="row g-2 m-0">
+            <section id="sidebar"
+                class="text-white d-flex flex-column text-center col-lg-3 col-xl-2 bg-secondary-color m-0 d-none d-lg-block p-3">
+                <div class="mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle icone-perfil"
+                        viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                    <h3 class="fs-4 fw-bold m-0 mt-1">Jucelino Barbosa</h3>
+                    <p class="text-truncate px-3">jucebarbarosa@gmail.com</p>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <a href="#metricas"
+                        class="link-sidebar gap-2 text-white text-decoration-none d-flex mx-auto align-items-center">
+                        <i class="fs-2 color-primary bi bi-bar-chart-line-fill"></i> Métricas
+                    </a>
+                    <a href="#mensagens"
+                        class="link-sidebar gap-2 text-white text-decoration-none d-flex mx-auto align-items-center">
+                        <i class="fs-2 color-primary bi bi-chat-right-text-fill"></i> Mensagens
+                    </a>
+                    <a href="#metas"
+                        class="link-sidebar gap-2 text-white text-decoration-none d-flex mx-auto align-items-center">
+                        <i class="fs-2 color-primary bi bi-graph-up"></i> Metas
+                    </a>
+                    <a href="#alunos"
+                        class="link-sidebar gap-2 text-white text-decoration-none d-flex mx-auto align-items-center">
+                        <i class="fs-2 color-primary bi bi-people-fill"></i> Alunos
+                    </a>
+                </div>
+            </section>
+
+            <div class="col-lg-9 col-xl-10 p-4 px-2 px-lg-5">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="text-uppercase fw-bold m-0">Dashboard</h2>
+                    <a href="/"
+                        class="fw-semibold text-bg-danger p-1 px-3 rounded-2 d-flex w-auto gap-2 text-decoration-none align-items-center">Sair<i
+                            class="fs-4 bi bi-box-arrow-right"></i></a>
+                </div>
+
+                <section class="row justify-content-center g-3 my-3" id="metricas">
+                    <article class="col-10 col-md-5 col-lg-4">
+                        <div
+                            class="d-flex align-items-center justify-content-center bg-tertiary-color px-2 rounded-3 gap-3">
+                            <i class="bi bi-people-fill icone-metricas"></i>
+                            <div>
+                                <p class="display-6 m-0 fw-bold">925</p>
+                                <h3 class="fs-6 m-0">Alunos Ativos</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-10 col-md-5 col-lg-4">
+                        <div
+                            class="d-flex align-items-center justify-content-center bg-tertiary-color px-2 rounded-3 gap-3">
+                            <i class="bi bi-file-bar-graph-fill icone-metricas"></i>
+                            <div>
+                                <p class="display-6 m-0 fw-bold">+11%</p>
+                                <h3 class="fs-6 m-0">Crescimento Mensal</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-10 col-md-5 col-lg-4">
+                        <div
+                            class="d-flex align-items-center justify-content-center bg-tertiary-color px-2 rounded-3 gap-3">
+                            <i class="bi bi-emoji-laughing-fill  icone-metricas"></i>
+                            <div>
+                                <p class="display-6 m-0 fw-bold">97%</p>
+                                <h3 class="fs-6 m-0">Satisfação dos Alunos</h3>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <section>
+                    <div class="d-flex gap-2 align-items-center alert alert-info" role="alert">
+                        <i class="fs-5 bi bi-info-circle-fill"></i> Aulas de alta demanda nesta semana: Muay Thai e
+                        Funcional.
+                    </div>
+                    <div class="d-flex gap-2 align-items-center alert alert-warning" role="alert">
+                        <i class="fs-5 bi bi-exclamation-triangle-fill"></i> Alta ocupação nos horários de pico.
+                    </div>
+                    <div class="d-flex gap-2 align-items-center alert alert-danger" role="alert">
+                        <i class="fs-5 bi bi-exclamation-octagon-fill"></i> 8 pagamentos pendentes identificados.
+                    </div>
+                </section>
+
+                <div class="row g-2 gx-3 mb-3">
+                    <section id="mensagens" class="col-12 col-lg-6">
+                        <div class="bg-secondary-color p-3 rounded-3  d-flex flex-column gap-2">
+                            <h3 class="fw-bold fs-5">Últimas mensagens recebidas</h3>
+                            <article class="bg-primary-color p-2 rounded-2">
+                                <h4 class="fw-semibold fs-6">Ana Souza</h4>
+                                <p class="m-0">Vocês oferecem acompanhamento com personal trainer?</p>
+                            </article>
+                            <article class="bg-primary-color p-2 rounded-2">
+                                <h4 class="fw-semibold fs-6">Rafael Gomes</h4>
+                                <p class="m-0">A academia possui plano para estudantes?</p>
+                            </article>
+                            <article class="bg-primary-color p-2 rounded-2">
+                                <h4 class="fw-semibold fs-6">Felipe Rocha</h4>
+                                <p class="m-0">Existe algum desconto para pagamento anual?</p>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section id="metas" class="col-12 col-lg-6">
+                        <div class="bg-secondary-color p-3 rounded-3 d-flex flex-column gap-2 h-100 gap-2">
+                            <h3 class="fw-bold fs-5">Metas</h3>
+                            <article>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="fs-6 m-0">Faturamento Mensal</h3>
+                                    <p class="m-0 fs-7 text-end">R$ 26.240 / R$ 32.000</p>
+                                </div>
+                                <div class="progress border-0 rounded-1 bg-primary-color" style="height: 2em;">
+                                    <div class="progress-bar text-bg-success" role="progressbar"
+                                        aria-label="Basic example" style="width: 82%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"><strong class="fs-7">82%</strong></div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="fs-6 m-0">Presença Semanal</h3>
+                                    <p class="m-0 fs-7 text-end"> 589 / 925 presenças</p>
+                                </div>
+                                <div class="progress border-0 rounded-1 bg-primary-color" style="height: 2em;">
+                                    <div class="progress-bar text-bg-warning" role="progressbar"
+                                        aria-label="Basic example" style="width: 63%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"><strong class="fs-7">63%</strong></div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="fs-6 m-0">Meta de Matrículasl</h3>
+                                    <p class="m-0 fs-7 text-end">73 / 100 alunos</p>
+                                </div>
+                                <div class="progress border-0 rounded-1 bg-primary-color" style="height: 2em;">
+                                    <div class="progress-bar text-bg-success" role="progressbar"
+                                        aria-label="Basic example" style="width: 73%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"><strong class="fs-7">73%</strong></div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="fs-6 m-0">Renovação de Planos</h3>
+                                    <p class="m-0 fs-7 text-end">99 / 236 renovações</p>
+                                </div>
+                                <div class="progress border-0 rounded-1 bg-primary-color" style="height: 2em;">
+                                    <div class="progress-bar text-bg-danger" role="progressbar"
+                                        aria-label="Basic example" style="width: 42%;" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"><strong class="fs-7">42%</strong></div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="table-responsive" id="alunos">
+                    <table class="table table-dark table-striped border border-1 border-primary-color">
+                        <thead class="border border-1 border-primary-color">
+                            <tr>
+                                <th scope="col" class="p-0">
+                                    <div class="p-2 bg-tertiary-color d-flex align-items-center justify-content-center gap-1">
+                                        <i class="bi bi-person"></i>Nome
+                                    </div>
+                                </th>
+                                <th scope="col" class="p-0">
+                                    <div class="p-2 bg-tertiary-color d-flex align-items-center justify-content-center gap-1">
+                                        <i class="bi bi-clipboard2"></i>Plano
+                                    </div>
+                                </th>
+                                <th scope="col" class="p-0">
+                                    <div class="p-2 bg-tertiary-color d-flex align-items-center justify-content-center gap-1 text-nowrap">
+                                        <i class="bi bi-clock"></i>Última visita
+                                    </div>
+                                </th>
+                                <th scope="col" class="p-0">
+                                    <div class="p-2 bg-tertiary-color d-flex align-items-center justify-content-center gap-1">
+                                        <i class="bi bi-bullseye"></i>Objetivo
+                                    </div>
+                                </th>
+                                <th scope="col" class="p-0">
+                                    <div class="p-2 bg-tertiary-color d-flex align-items-center justify-content-center gap-1">
+                                        <i class="bi bi-check-circle"></i>Status
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <tr>
+                                <td scope="row">Lucas Martins</td>
+                                <td>Plano Master</td>
+                                <td>28/04/2026</td>
+                                <td>Emagrecimento</td>
+                                <td>
+                                    <div class="badge text-bg-success w-100 rounded-pill fs-6">
+                                        Ativo
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Pedro Henrique</td>
+                                <td>Plano Combat</td>
+                                <td>25/04/2026</td>
+                                <td>Ganho de massa</td>
+                                <td>
+                                    <div class="badge text-bg-success w-100 rounded-pill fs-6">
+                                        Ativo
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Bruno Carvalho</td>
+                                <td>Plano Master</td>
+                                <td>20/04/2026</td>
+                                <td>Ganho de massa</td>
+                                <td>
+                                    <div class="badge text-bg-danger w-100 rounded-pill fs-6">
+                                        Inativo
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Mariana Ribeiro</td>
+                                <td>Plano Master</td>
+                                <td>29/04/2026</td>
+                                <td>Reabilitação física</td>
+                                <td>
+                                    <div class="badge text-bg-success w-100 rounded-pill fs-6">
+                                        Ativo
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Fernanda Alves</td>
+                                <td>Plano Master Pro</td>
+                                <td>30/04/2026</td>
+                                <td>Ganho de massa</td>
+                                <td>
+                                    <div class="badge text-bg-success w-100 rounded-pill fs-6">
+                                        Ativo
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Diego Santos</td>
+                                <td>Plano Combat</td>
+                                <td>18/04/2026</td>
+                                <td>Emagrecimento</td>
+                                <td>
+                                    <div class="badge text-bg-danger w-100 rounded-pill fs-6">
+                                        Inativo
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="border-top border-primary-color p-3 pb-0">
+        <div class="row d-flex align-items-center mb-3 flex-column flex-md-row">
+            <div class="col-12 col-lg-4 order-1 order-lg-0 p-1 pb-2 py-md-3">
+                <h3 class="text-white text-center fs-5 mb-2">Redes <span class="color-primary">Sociais</span></h3>
+                <div class="d-flex gap-3 justify-content-center align-items-center">
+                    <a target="_blank" href="https://www.instagram.com/pdcaseinformatica/"
+                        class="bg-tertiary-color p-2 d-flex justify-content-center align-items-center rounded-circle text-decoration-none"><i
+                            class="d-flex justify-content-center align-items-center fs-4 text-white bi bi-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/pd.case.7?locale=pt_BR"
+                        class="bg-tertiary-color p-2 d-flex justify-content-center align-items-center rounded-circle text-decoration-none"><i
+                            class="d-flex justify-content-center align-items-center fs-4 text-white bi bi-facebook"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/@PDCaseInformatica"
+                        class="bg-tertiary-color p-2 d-flex justify-content-center align-items-center rounded-circle text-decoration-none"><i
+                            class="d-flex justify-content-center align-items-center fs-4 text-white bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center order-0">
+                <img src="../img/logo.png" width="200" alt="Logo FitMaster">
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center order-2">
+                <a href="nossa-unidade.html" class="btn-primary fs-5"><i class="bi bi-pin-map"></i> Ver
+                    localização</a>
+            </div>
+        </div>
+        <div class="border-top border-secondary-color">
+            <p class="text-white text-center fs-6 m-0 p-3">© 2026 FitMaster. Todos os Direitos Reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>
