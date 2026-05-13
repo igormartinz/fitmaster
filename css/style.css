@@ -126,11 +126,11 @@ table {
 }
 
 /* LINKS DO CABEÇALHO */
-.link-nav{
+.nav-link{
     transition: .3s;
 }
 
-.link-nav:hover{
+.nav-link:hover{
     color: var(--cor-primaria) !important;
 }
 
