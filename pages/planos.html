@@ -9,10 +9,11 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/planos.css">
     <title>FitMaster | Planos</title>
 </head>
 
-<body class="bg-primary-color">
+<body class="bg-primary-color d-flex flex-column min-vh-100">
     <!-- HEADER -->
     <header
         class="container-fluid d-flex justify-content-between align-items-center py-3 bg-primary-color border-bottom border-primary-color w-100">
@@ -38,9 +39,9 @@
             <div class="collapse navbar-collapse menu-mobile">
                 <ul
                     class="navbar-nav d-flex flex-column flex-md-row m-0 p-0 gap-3 align-items-md-center align-items-start">
-                    <li><a href="/" class="text-white text-decoration-none link-nav">Início</a></li>
-                    <li><a href="planos.html" class="text-white text-decoration-none border-bottom border-2 pb-1 link-nav">Planos</a></li>
-                    <li><a href="nossa-unidade.html" class="text-white text-decoration-none link-nav">Nossa Unidade</a>
+                    <li><a href="/" class="text-white text-decoration-none">Início</a></li>
+                    <li><a href="planos.html" class="text-white text-decoration-none">Planos</a></li>
+                    <li><a href="nossa-unidade.html" class="text-white text-decoration-none">Nossa Unidade</a>
                     </li>
                     <li><a href="login.html" class="btn-primary d-inline-block">Entrar</a></li>
                 </ul>
@@ -48,13 +49,13 @@
         </nav>
     </header>
 
-    <main class="container">
-        <h2 class="text-white text-uppercase fw-bold text-center fs-2 my-4">Escolha <span class="color-primary">seu
+    <main class="flex-grow-1 d-flex flex-column justify-content-center m-4">
+        <h2 class="text-white text-uppercase fw-bold text-center fs-2 mb-4">Escolha <span class="color-primary">seu
                 plano<span></h2>
 
-        <div class="row g-4 justify-content-center align-items-center mb-3 m-0">
-            <div class="col-10 col-sm-9 col-md-6 col-lg-6">
-                <article class="text-white bg-secondary-color rounded-4 p-3 h-100">
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+            <div class="">
+                <article class="text-white bg-secondary-color rounded-4 p-3 h-100 plano">
                     <h3 class="text-center fw-bold mb-3 fw-3">Plano Combat</h3>
                     <p>Evolua nas artes marciais com técnica e intensidade.</p>
 
@@ -97,8 +98,8 @@
                     <a href="matricule-se.html" class="btn-primary text-center d-block mt-auto">Matricule-se</a>
                 </article>
             </div>
-            <div class="col-10 col-sm-9 col-md-6 col-lg-6">
-                <article class="text-white bg-secondary-color rounded-4 p-3 h-100">
+            <div class="">
+                <article class="text-white bg-secondary-color rounded-4 p-3 h-100 plano">
                     <h3 class="text-center fw-bold mb-3 fw-3">Plano Master</h3>
                     <p>Mais acesso e variedade para sua evolução.</p>
 
@@ -141,8 +142,8 @@
                     <a href="matricule-se.html" class="btn-primary text-center d-block mt-auto">Matricule-se</a>
                 </article>
             </div>
-            <div class="col-10 col-sm-9 col-md-6 col-lg-6">
-                <article class="text-white bg-secondary-color rounded-4 p-3 h-100">
+            <div class="">
+                <article class="text-white bg-secondary-color rounded-4 p-3 h-100 plano">
                     <h3 class=" text-center fw-bold mb-3 fw-3">Plano Master Pro</h3>
                     <p>Treinos completos com melhor acompanhamento.</p>
 
@@ -185,8 +186,8 @@
                     <a href="matricule-se.html" class="btn-primary text-center d-block mt-auto">Matricule-se</a>
                 </article>
             </div>
-            <div class="col-10 col-sm-9 col-md-6 col-lg-6">
-                <article class="text-white bg-secondary-color rounded-4 p-3 h-100">
+            <div class="">
+                <article class="text-white bg-secondary-color rounded-4 p-3 h-100 plano">
                     <h3 class=" text-center fw-bold mb-3 fw-3">Plano Master Pro</h3>
                     <p>Treinos completos com melhor acompanhamento.</p>
 
@@ -235,13 +236,13 @@
     <!-- RODAPÉ -->
     <footer class="border-top border-primary-color p-3 pb-0">
         <div class="row d-flex align-items-center mb-3 flex-column flex-md-row">
-            <div class="col-12 col-md-4 order-1 order-md-0 p-2 pb-3 py-md-3">
+            <div class="col-12 col-lg-4 order-1 order-lg-0 p-1 pb-2 py-md-3">
                 <h3 class="text-white text-center fs-5 mb-2">Redes <span class="color-primary">Sociais</span></h3>
                 <div class="d-flex gap-3 justify-content-center align-items-center">
                     <a target="_blank" href="https://www.instagram.com/pdcaseinformatica/"
                         class="bg-tertiary-color p-2 d-flex justify-content-center align-items-center rounded-circle text-decoration-none"><i
                             class="d-flex justify-content-center align-items-center fs-4 text-white bi bi-instagram"></i></a>
-                    <a target="_blank" href="https://www.facebook.com/pd.case.10?locale=pt_BR"
+                    <a target="_blank" href="https://www.facebook.com/pd.case.7?locale=pt_BR"
                         class="bg-tertiary-color p-2 d-flex justify-content-center align-items-center rounded-circle text-decoration-none"><i
                             class="d-flex justify-content-center align-items-center fs-4 text-white bi bi-facebook"></i></a>
                     <a target="_blank" href="https://www.youtube.com/@PDCaseInformatica"
@@ -249,10 +250,10 @@
                             class="d-flex justify-content-center align-items-center fs-4 text-white bi bi-youtube"></i></a>
                 </div>
             </div>
-            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center order-0">
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center order-0">
                 <img src="../img/logo.png" width="200" alt="Logo FitMaster">
             </div>
-            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center order-2">
+            <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center order-2">
                 <a href="nossa-unidade.html" class="btn-primary fs-5"><i class="bi bi-pin-map"></i> Ver
                     localização</a>
             </div>
