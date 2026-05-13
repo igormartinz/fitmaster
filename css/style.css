@@ -72,11 +72,11 @@ table {
     padding: .6em;
     border-radius: 5px;
     font-weight: 600;
-    transition: .5s;
+    transition: .3s;
 }
 
 .btn-primary:hover {
-    background-color: #FF8124;
+    background-color: #d15700;
 }
 
 .btn-secondary {
@@ -85,7 +85,7 @@ table {
 }
 
 .btn-secondary:hover {
-    background-color: #FFC767;
+    background-color: #fcc463;
 }
 
 /* BORDAS */
@@ -125,11 +125,21 @@ table {
     color: #666666;
 }
 
+/* LINKS DO CABEÇALHO */
+.link-nav{
+    transition: .3s;
+}
+
+.link-nav:hover{
+    color: var(--cor-primaria) !important;
+}
+
 /* MENU RESPONSIVO */
 .bi-list {
     font-size: 3em;
     padding: 0;
 }
+
 @media (max-width: 767px) {
     .menu-mobile {
         position: absolute;
