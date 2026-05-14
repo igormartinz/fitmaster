@@ -16,9 +16,11 @@
 <body class="formulario">
     <div class="row m-0">
         <main class="min-vh-100 d-flex justify-content-center align-items-center p-0">
+
             <section id="matricula"
                 class="bg-opacity-90 text-white p-4 rounded-4 text-center p-lg-4 m-1 col-md-8 col-lg-11 col-xl-10 col-xxl-8">
                 <div class="d-flex flex-column">
+
                     <div class="d-lg-flex align-items-lg-center gap-3">
                         <img src="/img/logo.png" width="200" class="mx-auto me-lg-0 order-lg-1" alt="Logo FitMaster">
                         <div class="p-2 order-lg-0 d-lg-flex flex-lg-column align-items-lg-start">
@@ -26,19 +28,27 @@
                             <p>Cadastre-se agora e dê o primeiro passo para uma vida mais saudável.</p>
                         </div>
                     </div>
-                    <form action="" class="d-flex flex-column justify-content-start align-items-start gap-3">
-                        <div class="row d-lg-flex flex-lg-row w-100 g-3 gx-lg-3 mx-auto">
-                            <div class="col-lg-4 d-flex d-lg-flex flex-column gap-3">
+
+                    <!-- FORMULARIO -->
+                    <form action="#" class="d-flex flex-column justify-content-start align-items-start gap-3">
+                        <div class="row d-lg-flex w-100 g-3 gx-lg-3 mx-auto">
+                            <div class="col-lg-4 d-flex flex-column gap-3">
+
+                                <!-- NOME -->
                                 <div class="d-flex flex-column w-100 align-items-start order-lg-0">
                                     <label for="nome">Nome completo</label>
                                     <input class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100"
-                                        type="email" name="nome" id="nome" placeholder="Digite seu nome completo">
+                                        type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
                                 </div>
+
+                                <!-- EMAIL -->
                                 <div class="d-flex flex-column w-100 align-items-start order-lg-1">
                                     <label for="email">E-mail</label>
                                     <input class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100"
                                         type="email" name="email" id="email" placeholder="exemplo@gmail.com">
                                 </div>
+
+                                <!-- SENHA -->
                                 <div class="d-flex flex-column w-100 align-items-start order-lg-2">
                                     <label for="senha">Senha</label>
                                     <input type="password" name="senha"
@@ -46,25 +56,35 @@
                                         id="senha" placeholder="Crie sua senha">
                                 </div>
                             </div>
-                            <div class="col-lg-4 d-flex d-lg-flex flex-column gap-3">
+
+                            <div class="col-lg-4 d-flex flex-column gap-3">
+
+                                <!-- TELEFONE -->
                                 <div class="d-flex flex-column w-100 align-items-start order-2 order-lg-1">
                                     <label for="telefone">Telefone</label>
                                     <input class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100" type="tel"
                                         name="telefone" id="telefone" placeholder="(00) 00000-0000">
                                 </div>
+
+                                <!-- CPF -->
                                 <div class="d-flex flex-column w-100 align-items-start order-1 order-lg-0">
                                     <label for="cpf">CPF</label>
                                     <input class="bg-secondary-color border-0 p-2 rounded-2 text-white w-100"
-                                        type="email" name="cpf" id="cpf" placeholder="000.000.00-00">
+                                        type="text" name="cpf" id="cpf" placeholder="000.000.00-00">
                                 </div>
+
+                                <!-- SENHA CONFIRMAÇÃO -->
                                 <div class="d-flex flex-column w-100 align-items-start order-0 order-lg-2">
                                     <label for="senha-confirmacao">Senha (confirmação)</label>
-                                    <input type="password" name="senha"
+                                    <input type="password" name="senha-confirmacao"
                                         class="bg-secondary-color p-2 rounded-2 text-white w-100 form-control is-invalid"
                                         id="senha-confirmacao" placeholder="Confirme sua senha">
                                 </div>
                             </div>
-                            <div class="col-lg-4 d-flex d-lg-flex flex-column gap-3 gap-lg-2">
+
+                            <div class="col-lg-4 d-flex flex-column gap-3 gap-lg-2">
+
+                                <!-- OBJETIVO -->
                                 <div class="d-flex flex-column w-100 align-items-start">
                                     <p class="m-0">Objetivo</p>
                                     <div class="d-flex align-items-center gap-1 p-1">
@@ -84,6 +104,8 @@
                                         <label for="reabilitacao">Reabilitação</label>
                                     </div>
                                 </div>
+
+                                <!-- PLANO -->
                                 <div class="d-flex flex-column w-100 align-items-start">
                                     <label for="plano">Plano</label>
                                     <select name="plano" id="plano"
@@ -97,7 +119,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row d-lg-flex flex-lg-row w-100 g-3 gx-lg-3 mx-auto">
+
+                        <div class="row w-100 g-3 gx-lg-3 mx-auto">
+
+                            <!-- LIMITAÇÃO FÍSICA -->
                             <div class="d-flex flex-column align-items-start col-lg-8">
                                 <label for="limitacao">Possui limitação física?</label>
                                 <input type="text" name="limitacao"
@@ -107,7 +132,10 @@
                                     Ex.: dor no joelho, problema na coluna, nenhuma limitação
                                 </div>
                             </div>
+
                             <div class="d-flex row g-2 align-items-start justify-content-between col-lg-4 px-2">
+
+                                <!-- ALTURA -->
                                 <div class="col-5 col-lg-6">
                                     <div class="d-flex flex-column align-items-start input-group">
                                         <label for="altura">Altura</label>
@@ -121,6 +149,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- PESO -->
                                 <div class="col-5 col-lg-6">
                                     <div class="d-flex flex-column align-items-start input-group">
                                         <label for="peso">Peso</label>
@@ -134,8 +164,11 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
+
+                        <!-- TERMOS -->
                         <div class="d-flex align-items-center justify-content-start w-100 gap-2 mx-2">
                             <input type="checkbox" name="termos" id="termos">
                             <label for="termos" class="m-0">Aceito os</label><label for="modal-toggle"
