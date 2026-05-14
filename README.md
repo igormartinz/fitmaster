@@ -46,8 +46,6 @@ Painel administrativo desenvolvido para simular o gerenciamento interno da acade
 
 ## Principais classes Bootstrap utilizadas
 
-Durante o desenvolvimento do projeto, foram utilizadas diversas classes utilitárias do Bootstrap para estruturar, estilizar e tornar toda a interface responsiva, sem o uso de JavaScript.
-
 ### Layout e estrutura
 Classes responsáveis pela organização geral da página e distribuição dos elementos.
 
@@ -153,11 +151,13 @@ Classes utilitárias para margens e preenchimentos.
 
 ---
 
-### osicionamento
+### Posicionamento
 Usadas para sobreposição e posicionamento de elementos.
 
 - `position-relative`
+- `position-fixed`
 - `position-absolute`
+- `z-index-*`
 - `top-0`
 - `bottom-0`
 - `start-0`
@@ -168,7 +168,6 @@ Usadas para sobreposição e posicionamento de elementos.
 ### Componentes Bootstrap
 Componentes reutilizáveis integrados ao projeto.
 
-- `card`
 - `badge`
 - `form-control`
 - `btn`
