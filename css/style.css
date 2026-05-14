@@ -37,7 +37,8 @@ button,
 del,
 small,
 strong,
-table {
+table,
+ul {
     font-family: var(--fonte-montserrat);
 }
 
