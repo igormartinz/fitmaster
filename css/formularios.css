@@ -15,10 +15,8 @@
 /* MODAL */
 /* Fundo do modal */
 .modal {
-    position: fixed;
     inset: 0;
     display: none;
-    z-index: 999;
 }
 
 #modal-toggle:checked ~ .modal {
