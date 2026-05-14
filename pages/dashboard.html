@@ -83,7 +83,9 @@
 
     <main class="text-white">
         <div class="row g-2 m-0">
-            <section id="sidebar"
+
+            <!-- SIDEBAR -->
+            <aside id="sidebar"
                 class="text-white d-flex flex-column text-center col-lg-3 col-xl-2 bg-secondary-color m-0 d-none d-lg-block p-3">
                 <div class="mt-5">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-circle icone-perfil"
@@ -95,34 +97,37 @@
                     <h3 class="fs-4 fw-bold m-0 mt-1">Jucelino Barbosa</h3>
                     <p class="text-truncate px-3">jucebarbarosa@gmail.com</p>
                 </div>
-                <div class="d-flex flex-column gap-2">
+                <nav class="d-flex flex-column gap-2">
                     <a href="#metricas"
-                        class="link-sidebar gap-2 text-white text-decoration-none d-flex mx-auto align-items-center">
+                        class="link-sidebar gap-2 text-white nav-link d-flex mx-auto align-items-center">
                         <i class="fs-2 color-primary bi bi-bar-chart-line-fill"></i> Métricas
                     </a>
                     <a href="#mensagens"
-                        class="link-sidebar gap-2 text-white text-decoration-none d-flex mx-auto align-items-center">
+                        class="link-sidebar gap-2 text-white nav-link d-flex mx-auto align-items-center">
                         <i class="fs-2 color-primary bi bi-chat-right-text-fill"></i> Mensagens
                     </a>
                     <a href="#metas"
-                        class="link-sidebar gap-2 text-white text-decoration-none d-flex mx-auto align-items-center">
+                        class="link-sidebar gap-2 text-white nav-link d-flex mx-auto align-items-center">
                         <i class="fs-2 color-primary bi bi-graph-up"></i> Metas
                     </a>
                     <a href="#alunos"
-                        class="link-sidebar gap-2 text-white text-decoration-none d-flex mx-auto align-items-center">
+                        class="link-sidebar gap-2 text-white nav-link d-flex mx-auto align-items-center">
                         <i class="fs-2 color-primary bi bi-people-fill"></i> Alunos
                     </a>
-                </div>
-            </section>
+                </nav>
+            </aside>
 
             <div class="col-lg-9 col-xl-10 p-4 px-2 px-lg-5">
+
+                <!-- DASHBOARD -->
                 <div class="d-flex justify-content-between align-items-center">
                     <h2 class="text-uppercase fw-bold m-0">Dashboard</h2>
                     <a href="/"
-                        class="fw-semibold text-bg-danger p-1 px-3 rounded-2 d-flex w-auto gap-2 text-decoration-none align-items-center">Sair<i
+                        class="fw-semibold text-bg-danger p-1 px-3 rounded-2 d-flex gap-2 text-decoration-none align-items-center">Sair<i
                             class="fs-4 bi bi-box-arrow-right"></i></a>
                 </div>
 
+                <!-- CARDS DE METRICAS -->
                 <section class="row justify-content-center g-3 my-3" id="metricas">
                     <article class="col-10 col-md-5 col-lg-4">
                         <div
@@ -156,6 +161,7 @@
                     </article>
                 </section>
 
+                <!-- ALERTAS -->
                 <section>
                     <div class="d-flex gap-2 align-items-center alert alert-info" role="alert">
                         <i class="fs-5 bi bi-info-circle-fill"></i> Aulas de alta demanda nesta semana: Muay Thai e
@@ -170,6 +176,8 @@
                 </section>
 
                 <div class="row g-2 gx-3 mb-3">
+
+                    <!-- MENSAGENS -->
                     <section id="mensagens" class="col-12 col-lg-6">
                         <div class="bg-secondary-color p-3 rounded-3  d-flex flex-column gap-2">
                             <h3 class="fw-bold fs-5">Últimas mensagens recebidas</h3>
@@ -188,6 +196,7 @@
                         </div>
                     </section>
 
+                    <!-- METAS -->
                     <section id="metas" class="col-12 col-lg-6">
                         <div class="bg-secondary-color p-3 rounded-3 d-flex flex-column gap-2 h-100 gap-2">
                             <h3 class="fw-bold fs-5">Metas</h3>
@@ -215,7 +224,7 @@
                             </article>
                             <article>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h3 class="fs-6 m-0">Meta de Matrículasl</h3>
+                                    <h3 class="fs-6 m-0">Meta de Matrículas</h3>
                                     <p class="m-0 fs-7 text-end">73 / 100 alunos</p>
                                 </div>
                                 <div class="progress border-0 rounded-1 bg-primary-color" style="height: 2em;">
@@ -239,6 +248,7 @@
                     </section>
                 </div>
 
+                <!-- TABELA PROFISSIONAL -->
                 <section class="table-responsive" id="alunos">
                     <table class="table table-hover table-dark table-striped border border-1 border-primary-color">
                         <thead class="border border-1 border-primary-color">
@@ -340,12 +350,8 @@
                         </tbody>
                     </table>
                 </section>
-
             </div>
         </div>
-
-
-
     </main>
 
     <!-- RODAPÉ -->
